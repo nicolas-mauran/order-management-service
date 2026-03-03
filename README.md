@@ -95,13 +95,14 @@ More details: [repository-structure.md](./docs/repository-structure.md)
 
 | Endpoint | Description | Status |
 |---|---|---|
-| `POST /orders` | Create new order | Sprint 1 |
-| `GET /orders/{id}` | Get order detail | Sprint 1 |
-| `GET /orders` | List orders | Sprint 2 |
-| `POST /orders/{id}/cancel` | Cancel order | Sprint 2 |
-| `POST /orders/{id}/fill` | Simulate fill | Sprint 3 |
+| `POST /orders` | Create new order | Implemented |
+| `GET /orders/{id}` | Get order detail | Implemented |
+| `GET /orders` | List orders | Implemented |
+| `POST /orders/{id}/cancel` | Cancel order | Implemented |
+| `POST /orders/{id}/fill` | Simulate fill | Implemented |
 
-OpenAPI UI target: `/swagger-ui.html`
+OpenAPI UI: `/swagger-ui/index.html`  
+Raw OpenAPI spec: `/v3/api-docs`
 
 ## 5. Engineering Standards
 
