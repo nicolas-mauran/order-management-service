@@ -18,6 +18,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.DynamicPropertyRegistry;
 import org.springframework.test.context.DynamicPropertySource;
+import org.testcontainers.utility.DockerImageName;
 import org.testcontainers.containers.PostgreSQLContainer;
 import org.testcontainers.junit.jupiter.Container;
 import org.testcontainers.junit.jupiter.Testcontainers;
@@ -28,7 +29,9 @@ class OrderApiIntegrationTest {
 
   @Container
   static final PostgreSQLContainer<?> POSTGRESQL_CONTAINER =
-      new PostgreSQLContainer<>("docker.io/library/postgres:16");
+      new PostgreSQLContainer<>(
+          DockerImageName.parse("docker.io/library/postgres:16")
+              .asCompatibleSubstituteFor("postgres"));
 
   @DynamicPropertySource
   static void configureDatasource(DynamicPropertyRegistry registry) {
