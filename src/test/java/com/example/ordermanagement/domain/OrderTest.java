@@ -62,5 +62,23 @@ class OrderTest {
         .isInstanceOf(IllegalStateException.class)
         .hasMessageContaining("Only NEW orders can be cancelled");
   }
-}
 
+  @Test
+  void should_fill_new_order() {
+    var order = Order.createNew("AAPL", OrderSide.BUY, OrderType.MARKET, 10, null);
+
+    order.fill();
+
+    assertThat(order.status()).isEqualTo(OrderStatus.FILLED);
+  }
+
+  @Test
+  void should_refuse_fill_for_non_new_order() {
+    var order = Order.createNew("AAPL", OrderSide.BUY, OrderType.MARKET, 10, null);
+    order.cancel();
+
+    assertThatThrownBy(order::fill)
+        .isInstanceOf(IllegalStateException.class)
+        .hasMessageContaining("Only NEW orders can be filled");
+  }
+}

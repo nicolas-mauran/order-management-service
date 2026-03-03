@@ -1,5 +1,6 @@
 package com.example.ordermanagement.adapters.in.web;
 
+import com.example.ordermanagement.application.usecase.OrderNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.MethodArgumentNotValidException;
@@ -19,6 +20,11 @@ public class RestExceptionHandler {
     return ResponseEntity.status(HttpStatus.CONFLICT).body(ApiError.of(ex.getMessage()));
   }
 
+  @ExceptionHandler(OrderNotFoundException.class)
+  public ResponseEntity<ApiError> handleOrderNotFound(OrderNotFoundException ex) {
+    return ResponseEntity.status(HttpStatus.NOT_FOUND).body(ApiError.of(ex.getMessage()));
+  }
+
   @ExceptionHandler(MethodArgumentNotValidException.class)
   public ResponseEntity<ApiError> handleValidation(MethodArgumentNotValidException ex) {
     String message =
@@ -29,4 +35,3 @@ public class RestExceptionHandler {
     return ResponseEntity.badRequest().body(ApiError.of(message));
   }
 }
-
