@@ -124,8 +124,10 @@ Execution tracking artifacts:
 
 - [product-backlog.md](./docs/product-backlog.md)
 - [sprint-backlog.md](./docs/sprint-backlog.md)
+- [frontend-epic-orders-ui.md](./docs/frontend-epic-orders-ui.md)
 - [frontend-client-questionnaire.md](./docs/frontend-client-questionnaire.md)
 - [frontend-backlog-initial.md](./docs/frontend-backlog-initial.md)
+- [sprint-4-frontend-plan.md](./docs/sprint-4-frontend-plan.md)
 
 ## 7. Quick Start
 

@@ -66,6 +66,11 @@ Outcome:
 
 Goal: enable users to create and monitor orders via a web UI.
 
+Epic and plan:
+
+- Epic: `docs/frontend-epic-orders-ui.md`
+- Sprint plan: `docs/sprint-4-frontend-plan.md`
+
 Planned items:
 
 - FE-01 view order list
@@ -86,3 +91,4 @@ Exit criteria:
 
 - UI integrated with existing backend API
 - MVP frontend acceptance criteria validated in review
+- Committed scope from sprint plan completed

@@ -6,6 +6,13 @@ Last update: 2026-03-03
 
 Build a web UI to create and monitor orders using existing API endpoints.
 
+Increment alignment:
+
+- I1: FE-01
+- I2: FE-02, FE-03
+- I3: FE-04, FE-05
+- I4: FE-06, FE-07
+
 ## Story FE-01 - View order list
 
 As a trader, I want to see all orders in a table so that I can monitor current activity.
@@ -79,6 +86,7 @@ Acceptance criteria:
 
 - In scope: FE-01, FE-02, FE-03, FE-04, FE-05, FE-06
 - Out of scope: pagination, advanced filters, auth, exports, realtime updates
+- Detailed sprint proposal: `docs/sprint-4-frontend-plan.md`
 
 ## Dependencies
 

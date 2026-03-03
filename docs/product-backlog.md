@@ -30,3 +30,10 @@ Last update: 2026-03-03
 
 - `Done`: implemented, tested, and merged on `main`.
 - `Todo`: not yet implemented or not committed as part of released scope.
+
+## Frontend Epic Reference
+
+- Epic FE-01:
+  - `docs/frontend-epic-orders-ui.md`
+- Initial story set:
+  - `docs/frontend-backlog-initial.md`
