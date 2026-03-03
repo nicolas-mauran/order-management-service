@@ -1,7 +1,7 @@
 # Sprint 4 Plan - Frontend Order Desk MVP
 
 Last update: 2026-03-03
-Sprint status: Proposed
+Sprint status: In progress
 
 ## Sprint Goal
 
@@ -36,6 +36,19 @@ Total proposed: 16 SP
 Stretch:
 
 - FE-07 frontend integration tests
+
+## Progress Snapshot
+
+- Done:
+  - FE-01 view order list
+- In progress:
+  - FE-02 create MARKET order
+  - FE-03 create LIMIT order
+- Todo:
+  - FE-04 cancel NEW order
+  - FE-05 fill NEW order
+  - FE-06 UX states and feedback hardening
+  - FE-07 frontend integration tests
 
 ## Delivery Sequence Inside Sprint
 

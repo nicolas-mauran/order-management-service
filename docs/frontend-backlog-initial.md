@@ -17,6 +17,8 @@ Increment alignment:
 
 As a trader, I want to see all orders in a table so that I can monitor current activity.
 
+Status: Done
+
 Acceptance criteria:
 
 - Given orders exist, when I open the app, then I see a table with id, symbol, side, type, quantity, limitPrice, status, createdAt.
@@ -26,6 +28,8 @@ Acceptance criteria:
 ## Story FE-02 - Create MARKET order
 
 As a trader, I want to create a MARKET order from a form so that I can submit quickly.
+
+Status: Todo
 
 Acceptance criteria:
 
@@ -37,6 +41,8 @@ Acceptance criteria:
 
 As a trader, I want to create a LIMIT order with limitPrice so that I can define execution price.
 
+Status: Todo
+
 Acceptance criteria:
 
 - Given type is `LIMIT`, when form is shown, then limitPrice field is required.
@@ -46,6 +52,8 @@ Acceptance criteria:
 ## Story FE-04 - Cancel order from list
 
 As a trader, I want to cancel a `NEW` order from the list so that I can stop it.
+
+Status: Todo
 
 Acceptance criteria:
 
@@ -57,6 +65,8 @@ Acceptance criteria:
 
 As a trader, I want to fill a `NEW` order from the list so that I can simulate execution.
 
+Status: Todo
+
 Acceptance criteria:
 
 - Given an order status is `NEW`, when I click fill, then API `/orders/{id}/fill` is called and row status updates to `FILLED`.
@@ -67,6 +77,8 @@ Acceptance criteria:
 
 As a user, I want clear loading/success/error feedback so that the UI feels reliable.
 
+Status: In progress
+
 Acceptance criteria:
 
 - Loading indicator appears for initial list load and action buttons during requests.
@@ -76,6 +88,8 @@ Acceptance criteria:
 ## Story FE-07 - Frontend integration tests
 
 As a maintainer, I want automated tests for critical frontend flows so that regressions are detected in CI.
+
+Status: Todo
 
 Acceptance criteria:
 

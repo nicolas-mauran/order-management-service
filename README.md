@@ -1,7 +1,7 @@
 # Order Management Service
 ## A Spring Boot 3 / Java 21 DDD-based REST API
 
-[![CI](https://github.com/your-org/order-management-service/actions/workflows/ci.yml/badge.svg)](https://github.com/your-org/order-management-service/actions/workflows/ci.yml)
+[![CI](https://github.com/nicolas-mauran/order-management-service/actions/workflows/ci.yml/badge.svg)](https://github.com/nicolas-mauran/order-management-service/actions/workflows/ci.yml)
 [![Java 21](https://img.shields.io/badge/Java-21-007396)](https://adoptium.net/)
 [![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.2%2B-6DB33F)](https://spring.io/projects/spring-boot)
 [![Architecture](https://img.shields.io/badge/Architecture-Hexagonal-blue)](./docs/adr/0001-ddd-tactical-hexagonal.md)
@@ -63,6 +63,9 @@ This keeps policy (business rules) isolated from mechanism (framework and storag
 |   |-- dod.md
 |   |-- implementation-plan.md
 |   `-- repository-structure.md
+|-- frontend/
+|   |-- src/
+|   `-- package.json
 |-- src/
 |   |-- main/
 |   |   |-- java/com/example/ordermanagement/
@@ -136,6 +139,17 @@ docker compose up -d postgres
 mvn clean verify
 mvn spring-boot:run
 ```
+
+Frontend FE-01 (Order list demo):
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Frontend app URL: `http://localhost:5173`  
+Backend API is proxied to `http://localhost:8080`.
 
 Stop and cleanup:
 

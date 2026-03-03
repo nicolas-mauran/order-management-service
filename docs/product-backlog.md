@@ -20,10 +20,10 @@ Last update: 2026-03-03
 | PB-12 | Reliability | As an API consumer, create/cancel/fill endpoints support idempotency keys. | Medium | Todo |
 | PB-13 | Security | As an operator, endpoints are protected with authentication and basic authorization. | Medium | Todo |
 | PB-14 | Delivery | As a maintainer, image is published by CI with tag strategy. | Low | Todo |
-| PB-15 | Frontend | As a trader, I can view orders in a web interface. | High | Todo |
+| PB-15 | Frontend | As a trader, I can view orders in a web interface. | High | Done |
 | PB-16 | Frontend | As a trader, I can create MARKET and LIMIT orders from a web form. | High | Todo |
 | PB-17 | Frontend | As a trader, I can cancel/fill NEW orders from the web interface. | High | Todo |
-| PB-18 | Frontend | As a user, I get clear loading, success, empty, and error states in the UI. | Medium | Todo |
+| PB-18 | Frontend | As a user, I get clear loading, success, empty, and error states in the UI. | Medium | In progress |
 | PB-19 | Frontend quality | As a maintainer, frontend critical flows are tested in CI. | Medium | Todo |
 
 ## Definition

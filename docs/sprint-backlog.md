@@ -73,7 +73,7 @@ Epic and plan:
 
 Planned items:
 
-- FE-01 view order list
+- FE-01 view order list (done)
 - FE-02 create MARKET order
 - FE-03 create LIMIT order
 - FE-04 cancel `NEW` order

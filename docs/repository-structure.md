@@ -20,6 +20,22 @@ src/main/java/com/example/ordermanagement
 `-- config                 # Spring beans and cross-cutting configuration
 ```
 
+## Frontend Layout
+
+```text
+frontend/
+|-- src/
+|   |-- api/               # HTTP client calls to backend
+|   |-- App.tsx            # Main screen and orchestration
+|   |-- main.tsx           # Frontend entrypoint
+|   |-- styles.css         # UI styling and responsive behavior
+|   `-- types.ts           # Frontend domain types
+|-- index.html
+|-- package.json
+|-- tsconfig.json
+`-- vite.config.ts
+```
+
 ## Test Layout
 
 ```text
@@ -36,6 +52,7 @@ src/test/java/com/example/ordermanagement
 docs/
 |-- adr/                    # Architecture Decision Records
 |-- dod.md                  # Definition of Done
+|-- frontend-*.md           # Frontend discovery, epic, and sprint artifacts
 |-- implementation-plan.md  # Sprint-based delivery plan
 `-- repository-structure.md # This document
 ```
@@ -46,4 +63,3 @@ docs/
 - Makes use cases explicit and testable.
 - Limits accidental coupling between REST, persistence, and domain.
 - Communicates senior-level code organization in a recruiter-friendly way.
-
