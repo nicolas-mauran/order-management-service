@@ -120,6 +120,11 @@ Definition of Done: [docs/dod.md](./docs/dod.md)
 Detailed backlog and acceptance criteria are documented in:
 [implementation-plan.md](./docs/implementation-plan.md)
 
+Execution tracking artifacts:
+
+- [product-backlog.md](./docs/product-backlog.md)
+- [sprint-backlog.md](./docs/sprint-backlog.md)
+
 ## 7. Quick Start
 
 ```bash
