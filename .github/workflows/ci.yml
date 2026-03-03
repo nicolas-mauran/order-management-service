@@ -19,8 +19,5 @@ jobs:
           java-version: "21"
           cache: maven
 
-      - name: Build and run tests
-        run: mvn -B clean test
-
-      - name: Generate coverage report
-        run: mvn -B jacoco:report
+      - name: Build, tests and quality gates
+        run: mvn -B clean verify
