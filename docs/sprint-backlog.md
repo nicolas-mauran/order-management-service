@@ -60,3 +60,29 @@ Outcome:
 - Idempotency keys on command endpoints
 - Authentication/authorization
 - Container image publish in CI
+- Frontend order desk MVP
+
+## Sprint 4 - Frontend Order Desk MVP (Planned)
+
+Goal: enable users to create and monitor orders via a web UI.
+
+Planned items:
+
+- FE-01 view order list
+- FE-02 create MARKET order
+- FE-03 create LIMIT order
+- FE-04 cancel `NEW` order
+- FE-05 fill `NEW` order
+- FE-06 loading/empty/error/success UX states
+
+Entry criteria:
+
+- Client questionnaire completed:
+  - `docs/frontend-client-questionnaire.md`
+- Story scope agreed:
+  - `docs/frontend-backlog-initial.md`
+
+Exit criteria:
+
+- UI integrated with existing backend API
+- MVP frontend acceptance criteria validated in review
